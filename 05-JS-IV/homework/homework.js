@@ -73,6 +73,11 @@ function tienePropiedad (objeto, propiedad) {
   // "propiedad" es un string
   // De lo contrario, devuelve "false"
   // Tu código:
+  // for (const key in objeto) {
+  //     if(key === propiedad) return true
+  // }
+  // return false
+  return objeto.hasOwnProperty(propiedad)
 }
 
 function verificarPassword (usuario, password) {
